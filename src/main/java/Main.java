@@ -15,18 +15,28 @@ public class Main {
 	// Nombre de la hoda donde están los datos para las señales 
 	static String sheetName = "";
 	
+	// Si es verdadero se genera un xml si es falso un excel
+	static Boolean isXml = Boolean.TRUE;
+	
 	
     public static void main(String[] args) {
-/*
+
     	inputFilePath = "C:\\Users\\emilio-desarrollo\\Desktop\\pruebas_excel\\Business_model_INV_GAMESA_PV_4300_SERIES_3X_v03.xlsx";
     	outputFilePath = "C:\\Users\\emilio-desarrollo\\Desktop\\pruebas_excel\\ggggggggggggggggg.xlsx";
         sheetName = "Data";
-  */  	
+    	
     	// pide las rutas por consola
-    	ingresaRutasParam();
+    	//ingresaRutasParam();
     	
         List<RegistroExcel> signalInfoList = Utill.obtencionDatos(inputFilePath, sheetName); 
-        Utill.escrituraDocumento(outputFilePath, signalInfoList);
+        
+        if(isXml) {
+        	Utill.escrituraDocumentoXml(outputFilePath, signalInfoList);
+        } else {
+        	//escribimos el excel
+        }
+        
+        
         System.out.println("Resultado de las validaciones: ");
         // Iterar sobre el Map
         for (Map.Entry<String, String> entry : Utill.erroresEnExcel.entrySet()) {
@@ -58,15 +68,23 @@ public class Main {
         			+ "Storage Policy -> Columna N");
  
         	System.out.println("");
-        	System.out.println("Se debe introduci en nombre de la hoja, normalmente suele ser 'Data'");
+        	System.out.println("Se debe introduci en nombre de la hoja, normalmente suele ser 'Data'");  	
+        	
         }
         
         System.out.println("Ingresa la ruta absoluta del excel (C:\\micarpeta\\mifichero.xlsx):");
         inputFilePath = scanner.nextLine();
         //System.out.println("inputFilePath despues escaner:  "+inputFilePath);
         
-        System.out.println("Ingresa el nombre de la hoja del Excel de donde se leeran los datos (DATA):");
+        System.out.println("Ingresa el nombre de la hoja del Excel de donde se leeran los datos (Data):");
         sheetName = scanner.nextLine();
+        
+
+        System.out.println("Generar Excell (Y or N):");
+         
+        if(scanner.nextLine().equalsIgnoreCase("Y")) {
+        	isXml = Boolean.FALSE;	
+        }
         
         System.out.println("Ingresa la ruta absoluta de salida del excel modificado (C:\\micarpeta\\mificheroDeSalida.xlsx):");
         outputFilePath = scanner.nextLine();

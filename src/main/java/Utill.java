@@ -1,11 +1,12 @@
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
-
+import java.io.BufferedWriter;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.usermodel.Cell;
@@ -19,147 +20,196 @@ import org.apache.poi.xssf.usermodel.XSSFColor;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.awt.Color;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
+import java.util.TreeMap;
 public class Utill {
 	
+	private static final String CABECERA_DOC = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n"
+			+ "<Template>\r\n"
+			+ "	<Attributes>\r\n"
+			+ "		<Attribute Name=\"Group Name\" Key=\"$GroupName$\"/>\r\n"
+			+ "	</Attributes>\r\n"
+			+ "	<Body>\r\n"
+			+ "		<![CDATA[<DummyGroup GroupName=\"$GroupName$\">\r\n"
+			+ "			<DummyItems>\r\n";
+	private static final String PIE_DOC = "</DummyItems>\r\n"
+			+ "		</DummyGroup>]]>\r\n"
+			+ "	</Body>\r\n"
+			+ "</Template>\r\n";
 	
-	public static Map<String, String> erroresEnExcel = new HashMap<>();
+	/* EJEMPLO ITEM del xml
+	 
+		<DummyItem DummyItemName="DATA.VoltageRN">
+			<SignalGenerated Name="DATA.VoltageRN" Description="AC Voltage Phase RN" Protocol="DummyProtocol" Unit="V" Bus="Bus" Device="Device" Address="Address" Offset="0" Scale="0.1" RangeLowerLimit="0" RangeUpperLimit="2000" Storable="False" Operation="R" Source="Protocol"/>
+		</DummyItem>
+	 
+<DummyItem DummyItemName="DATA.VoltageRN">
+	<SignalGenerated 
+	Name="DATA.VoltageRN" 
+	Description="AC 
+	Voltage Phase RN" 
+	Protocol="DummyProtocol" 
+	Unit="V" 
+	Bus="Bus" 
+	Device="Device" 
+	Address="Address" 
+	Offset="0" 
+	Scale="0.1" 
+	RangeLowerLimit="0" 
+	RangeUpperLimit="2000" 
+	Storable="False" 
+	Operation="R" 
+	Source="Protocol"/>
+</DummyItem>
+	 
+	 */
 	
 	
-	public static void escrituraDocumento(String excelFilePathOut, List<RegistroExcel> signalInfoList) {
-		try (Workbook workbook = new XSSFWorkbook()) {
-            Sheet sheet = workbook.createSheet("SignalData");
+	private String itemXmlss ="<DummyItem DummyItemName=\"DATA.VoltageRN\">\r\n"
+			+ "	<SignalGenerated \r\n"
+			+ "	Name=\"DATA.VoltageRN\" \r\n"
+			+ "	Description=\"AC \r\n"
+			+ "	Voltage Phase RN\" \r\n"
+			+ "	Protocol=\"DummyProtocol\" \r\n"
+			+ "	Unit=\"V\" \r\n"
+			+ "	Bus=\"Bus\" \r\n"
+			+ "	Device=\"Device\" \r\n"
+			+ "	Address=\"Address\" \r\n"
+			+ "	Offset=\"0\" \r\n"
+			+ "	Scale=\"0.1\" \r\n"
+			+ "	RangeLowerLimit=\"0\" \r\n"
+			+ "	RangeUpperLimit=\"2000\" \r\n"
+			+ "	Storable=\"False\" \r\n"
+			+ "	Operation=\"R\" \r\n"
+			+ "	Source=\"Protocol\"/>\r\n"
+			+ "</DummyItem>";
+	
+	public static Map<String, String> erroresEnExcel = new TreeMap<>();
+	
+	
+	public static void escrituraDocumentoXml(String excelFilePathOut, List<RegistroExcel> signalInfoList) {
+		
+		// Se escribe la cabecera del documento
+		
+		final String CELDA_VACIA ="";
+		String signalClass=""; 			
+		String isotrolSignalTag="";		
+		String isotrolEngDescription="";	
+		String units="";		
+		String scale="";		
+		String offset="";		
+		String lowerRange="";
+		String upperRange="";
+		String operation="";
+		String source="";	
+		String storage="";
+		String storagePolicy="";
 
-            // Estilo para texto en negrita
-            Font boldFont = workbook.createFont();
-            boldFont.setBold(true);
+	       
+		 try (BufferedWriter writer = new BufferedWriter(new FileWriter(excelFilePathOut))) {	
+	            int rowNum = 1;	
+	            String itemXml ="";
+	            
+	            writer.write(CABECERA_DOC);
+	            
+			for(RegistroExcel signalInfo : signalInfoList) {
+				
+				if(signalInfo.getSignalClass().equalsIgnoreCase("DUMMY") || signalInfo.getSignalClass().equalsIgnoreCase("PROTOCOL")) {
+							
+					isotrolSignalTag=formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass());
+				    if(signalInfo.getIsotrolSignalTag().equals("")) {
+				    	isotrolSignalTag="ValorNoMapeadoNoDefinido_"+rowNum+"_isotrolSignalTag";
+				    	erroresEnExcel.put(String.valueOf(rowNum), "El campo Signal Name no puede estar vacio, El registro no se incluira");
+				    }
+					
+					isotrolEngDescription=signalInfo.getIsotrolEngDescription();
+				    if(signalInfo.getIsotrolEngDescription().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Description no puede estar vacio");
+				    	isotrolEngDescription="ValorNoMapeadoNoDefinido_"+rowNum+"_isotrolEngDescription";
+				    }
+				    
+					units=signalInfo.getUnits();
+					
+					scale=signalInfo.getScale();
+				    if(signalInfo.getScale().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Scale no puede estar vacio");
+				    	scale="ValorNoMapeadoNoDefinido_"+rowNum+"_scale";
+				    }
+					
+					offset=signalInfo.getOffset();	
+				    if(signalInfo.getOffset().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Offset no puede estar vacio");
+				    	offset="ValorNoMapeadoNoDefinido_"+rowNum+"_offset";
+				    }
+					lowerRange=signalInfo.getLowerRange();
+				    if(signalInfo.getLowerRange().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Min no puede estar vacio");
+				    	lowerRange="ValorNoMapeadoNoDefinido_"+rowNum+"_lowerRange";
+				    }
+					upperRange=signalInfo.getUpperRange();
+				    if(signalInfo.getUpperRange().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Max no puede estar vacio");
+				    	upperRange="ValorNoMapeadoNoDefinido_"+rowNum+"_upperRange";
+				    }
+					
+					storage=formatStorage(signalInfo.getStorage());
+				    if(signalInfo.getStorage().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Storable no puede estar vacio");
+				    	storage="ValorNoMapeadoNoDefinido_"+rowNum+"_storage";
+				    }
+					
+					operation=signalInfo.getOperation();
+					
+					
+					
+					source=formatSource(signalInfo.getSource());	
+				    if(signalInfo.getStorage().equals("")) {
+				    	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Source no puede estar vacio");
+				    }				
+					
+					
+					itemXml ="				<DummyItem DummyItemName="+isotrolSignalTag+">\r\n"
+							+ "					<SignalGenerated "
+							+ "Name=\""+isotrolSignalTag+"\" "
+							+ "Description=\""+isotrolEngDescription+"\" "
+							+ "Protocol=\"DummyProtocol\" "
+							+ "Unit=\""+units+"\" n"
+							+ "Bus=\"Bus\" "
+							+ "Device=\"Device\" "
+							+ "Address=\"Address\" "
+							+ "Offset=\""+offset+"\" "
+							+ "Scale=\""+scale+"\" "
+							+ "RangeLowerLimit=\""+lowerRange+"\" "
+							+ "RangeUpperLimit=\""+upperRange+"\" "
+							+ "Storable=\""+storage+"\" "
+							+ "Operation=\""+operation+"\" "
+							+ "Source=\""+source+"\"/>\r\n"
+							+ "				</DummyItem>\r\n";
+					
+			           
+					writer.write(itemXml);
+				}
+				if(signalInfo.getSignalClass().equalsIgnoreCase("WEB")) {
+            		erroresEnExcel.put(String.valueOf(rowNum)+ " WEB", "Se omite la inclusión de este registro por ser de clase WEB");
+				}
 
-            CellStyle boldStyle = workbook.createCellStyle();
-            boldStyle.setFont(boldFont);
-            
-            
-            // Cabecera
-            Row head = sheet.createRow(0);
-            head.createCell(0).setCellValue("GP Signal");
-            head.createCell(1).setCellValue("Signal Name");
-            head.createCell(2).setCellValue("Description");
-            head.createCell(3).setCellValue("Unit");
-            head.createCell(4).setCellValue("Min");
-            head.createCell(5).setCellValue("Max");
-            head.createCell(6).setCellValue("Scale");
-            head.createCell(7).setCellValue("Offset");
-            head.createCell(8).setCellValue("Read/Wirte");
-            head.createCell(9).setCellValue("Storable");
-            head.createCell(10).setCellValue("Storable Policy");
-            head.createCell(11).setCellValue("Source");
-            head.setRowStyle(boldStyle);
-            
-            int rowNum = 1;
-            for (RegistroExcel signalInfo : signalInfoList) {
-                
-            	if(signalInfo.getSignalClass().equalsIgnoreCase("DUMMY") || signalInfo.getSignalClass().equalsIgnoreCase("PROTOCOL")) {
-	            	
-            		// estilos color celdas
-                    // Crear un estilo de celda con color de fondo
-                    CellStyle style = workbook.createCellStyle();
-                    
-                    Color colorAzul = new Color(0xC6, 0xD9, 0xF1); // Azul
-                    Color colorVerde = new Color(0x92, 0xD0, 0x50); // verde
-                    
-                    if(signalInfo.getSignalClass().equalsIgnoreCase("PROTOCOL")) {
-                    	style.setFillForegroundColor(IndexedColors.PALE_BLUE.getIndex()); // Cambiar a tu color deseado
-                    	//style.setFillForegroundColor(new XSSFColor(colorAzul)); 
-                    }else {
-                    	style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex()); // Cambiar a tu color deseado
-                    	//style.setFillForegroundColor(new XSSFColor(colorVerde)); 
-                    }
-                    style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
-            		
-            		
-            		//
-            		Row row = sheet.createRow(rowNum++);
-	                row.createCell(0).setCellValue(RegistroExcel.CELDA_VACIA);
-	                
-	                // se le concatena al inicio CALC o DATA dependiendo de la fuente (valor signalClass) 
-	                // si es WEB, se descarta y no se escribe, 
-	                // si es DUMMY se deberia escribir CACL, 
-	                // si es PROTOCOL se deberia escribir DATA, tambieén deberia coincidir con el valor de source si es Protocol o Business
-	                row.createCell(1).setCellValue(formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()));
-	                if(signalInfo.getIsotrolSignalTag().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum), "El campo Signal Name no puede estar vacio, El registro no se incluira");
-	                	rowNum--;
-	                }
-	                row.createCell(2).setCellValue(signalInfo.getIsotrolEngDescription());
-	                if(signalInfo.getIsotrolEngDescription().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Description no puede estar vacio");
-	                }
-	                row.createCell(3).setCellValue(signalInfo.getUnits());
-	                
-	                row.createCell(4).setCellValue(signalInfo.getLowerRange());
-	                if(signalInfo.getLowerRange().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Min no puede estar vacio");
-	                }
-	                row.createCell(5).setCellValue(signalInfo.getUpperRange());
-	                if(signalInfo.getUpperRange().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Max no puede estar vacio");
-	                }
-	                row.createCell(6).setCellValue(signalInfo.getScale());
-	                if(signalInfo.getScale().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Scale no puede estar vacio");
-	                }
-	                row.createCell(7).setCellValue(signalInfo.getOffset());
-	                if(signalInfo.getOffset().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Offset no puede estar vacio");
-	                }
-	                row.createCell(8).setCellValue(signalInfo.getOperation());
-	                
-	                // Se debe escribir como Y o N el valor leido sera true o false ignoreCase
-	                row.createCell(9).setCellValue(formatStorage(signalInfo.getStorage()));
-	                if(signalInfo.getStorage().equals("")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Storable no puede estar vacio");
-	                }
-	                row.createCell(10).setCellValue(signalInfo.getStoragePolicy());
-	                if(signalInfo.getStorage().equals("") && formatStorage(signalInfo.getStorage()).equalsIgnoreCase("y")) {
-	                	erroresEnExcel.put(String.valueOf(rowNum)+" referente a la señal: "+formatSignal(signalInfo.getIsotrolSignalTag(), signalInfo.getSignalClass()), "El campo Storable Policy no puede estar vacio si el campo Storable esta en True");
-	                }
-	                
-	                // Se debe escribir como 'Protocol' o 'Business' dependiendo de su valor en mayusculas
-	                row.createCell(11).setCellValue(formatSource(signalInfo.getSource()));
-	                
-	                
-	                
-	                
-	                
-	                style.setBorderBottom(BorderStyle.THIN);
-	                style.setBorderTop(BorderStyle.THIN);
-	                style.setBorderRight(BorderStyle.THIN);
-	                style.setBorderLeft(BorderStyle.THIN);
-    
-	                row.setRowStyle(style);
-            	}               
-            	if(signalInfo.getSignalClass().equalsIgnoreCase("WEB")) {
-            		erroresEnExcel.put(String.valueOf(rowNum)+ " WEB", "Se omite la inclusión de este registro por ser de calse WEB");
-            	}
-            	
-            	
-            	
-            }
-            
-            
-            // Establecer ancho de la columna basado en el contenido más largo
-            for (int colNum = 0; colNum < signalInfoList.size(); colNum++) {
-                sheet.autoSizeColumn(colNum);
-            }
-            System.out.println("Se hán escrito: "+signalInfoList.size());
-            // Guardar el archivo Excel
-            try (FileOutputStream outputStream = new FileOutputStream(excelFilePathOut)) {
-                workbook.write(outputStream);
-                System.out.println("El archivo Excel ha sido creado satisfactoriamente.");
-            }
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		            rowNum++;
+			}
+		
+			
+           
+            System.out.println("Texto escrito en el archivo '" + excelFilePathOut + "' correctamente.");
+     
+			
+		// Se escribe el pie del documento
+            writer.write(PIE_DOC);
+		
+		
+		
+		
+		   } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+		
 	}
 
    private static String formatSource(String storage) {

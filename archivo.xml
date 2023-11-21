@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template>
+	<Attributes>
+		<Attribute Name="Group Name" Key="$GroupName$"/>
+	</Attributes>
+	<Body>
+		<![CDATA[<DummyGroup GroupName="$GroupName$">
+			<DummyItems>
+				<DummyItem DummyItemName=CALC.CalculatedStatus>
+					<SignalGenerated Name="CALC.CalculatedStatus" Description="ValorNoMapeadoNoDefinido_1_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="27.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.CommunicationState>
+					<SignalGenerated Name="CALC.CommunicationState" Description="ValorNoMapeadoNoDefinido_2_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltageRN>
+					<SignalGenerated Name="DATA.VoltageRN" Description="AC Voltage Phase RN" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltageSN>
+					<SignalGenerated Name="DATA.VoltageSN" Description="AC Voltage Phase SN" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltageTN>
+					<SignalGenerated Name="DATA.VoltageTN" Description="AC Voltage Phase TN" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltagePh1>
+					<SignalGenerated Name="DATA.VoltagePh1" Description="AC Voltage Line RS" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltagePh2>
+					<SignalGenerated Name="DATA.VoltagePh2" Description="AC Voltage Line ST" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltagePh3>
+					<SignalGenerated Name="DATA.VoltagePh3" Description="AC Voltage Line SR" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.CurrentL1>
+					<SignalGenerated Name="DATA.CurrentL1" Description="ValorNoMapeadoNoDefinido_14_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-350.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.CurrentL2>
+					<SignalGenerated Name="DATA.CurrentL2" Description="ValorNoMapeadoNoDefinido_15_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-350.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.CurrentL3>
+					<SignalGenerated Name="DATA.CurrentL3" Description="ValorNoMapeadoNoDefinido_16_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-350.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MaxActivePower>
+					<SignalGenerated Name="DATA.MaxActivePower" Description="Max. Active Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="6000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.ActivePower>
+					<SignalGenerated Name="DATA.ActivePower" Description="ValorNoMapeadoNoDefinido_18_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MaxReactivePowerD>
+					<SignalGenerated Name="DATA.MaxReactivePowerD" Description="Max. Reactive Power Delivered" Protocol="DummyProtocol" Unit="kvar" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MaxReactivePowerR>
+					<SignalGenerated Name="DATA.MaxReactivePowerR" Description="Max. Reactive Power Received" Protocol="DummyProtocol" Unit="kvar" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.ReactivePower>
+					<SignalGenerated Name="DATA.ReactivePower" Description="ValorNoMapeadoNoDefinido_21_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.CosPhi>
+					<SignalGenerated Name="DATA.CosPhi" Description="ValorNoMapeadoNoDefinido_22_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0E-4" RangeLowerLimit="-1.1" RangeUpperLimit="-1.1" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Frequency>
+					<SignalGenerated Name="DATA.Frequency" Description="ValorNoMapeadoNoDefinido_23_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.01" RangeLowerLimit="49.0" RangeUpperLimit="51.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Voltage>
+					<SignalGenerated Name="DATA.Voltage" Description="Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.VoltagePh>
+					<SignalGenerated Name="DATA.VoltagePh" Description="AC Voltage Phase" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Current>
+					<SignalGenerated Name="DATA.Current" Description="Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.DCPower>
+					<SignalGenerated Name="DATA.DCPower" Description="ValorNoMapeadoNoDefinido_27_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.DCCurrent>
+					<SignalGenerated Name="DATA.DCCurrent" Description="ValorNoMapeadoNoDefinido_28_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-35.0" RangeUpperLimit="400.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.InverterState2>
+					<SignalGenerated Name="DATA.InverterState2" Description="Inverter State 2" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_29_upperRange" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.InverterState>
+					<SignalGenerated Name="DATA.InverterState" Description="Inverter State" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_30_upperRange" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TotalDCEnergy>
+					<SignalGenerated Name="DATA.TotalDCEnergy" Description="Total DC Active Energy Delivered" Protocol="DummyProtocol" Unit="MWh" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0E-6" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_31_upperRange" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TotalEnergy>
+					<SignalGenerated Name="DATA.TotalEnergy" Description="ValorNoMapeadoNoDefinido_32_isotrolEngDescription" Protocol="DummyProtocol" Unit="MWh" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0E-6" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_32_upperRange" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TotalEnergyR>
+					<SignalGenerated Name="DATA.TotalEnergyR" Description="Total Active Energy Received" Protocol="DummyProtocol" Unit="Mvarh" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0E-6" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_33_upperRange" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TotalReactiveEnergy>
+					<SignalGenerated Name="DATA.TotalReactiveEnergy" Description="Total Reactive Energy Delivered" Protocol="DummyProtocol" Unit="MWh" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0E-6" RangeLowerLimit="0.0" RangeUpperLimit="4.294967296E9" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TotalReactiveEnergyR>
+					<SignalGenerated Name="DATA.TotalReactiveEnergyR" Description="Total Reactive Energy Received" Protocol="DummyProtocol" Unit="Mvarh" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0E-6" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_35_upperRange" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.InverterAvailability>
+					<SignalGenerated Name="CALC.InverterAvailability" Description="ValorNoMapeadoNoDefinido_36_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ProductionRate>
+					<SignalGenerated Name="CALC.ProductionRate" Description="Production Rate" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-100.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Irradiation>
+					<SignalGenerated Name="CALC.Irradiation" Description="ValorNoMapeadoNoDefinido_38_isotrolEngDescription" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExpectedPower>
+					<SignalGenerated Name="CALC.ExpectedPower" Description="Inverter Expected Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-100.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.LowPerformanceEvent>
+					<SignalGenerated Name="CALC.LowPerformanceEvent" Description="Deviation Expected Power" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.DeviationTimeCounter>
+					<SignalGenerated Name="CALC.DeviationTimeCounter" Description="Power Deviation Seconds (daily)" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_41_upperRange" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.DeviationNumCounter>
+					<SignalGenerated Name="CALC.DeviationNumCounter" Description="Power Deviation Counter (daily)" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="ValorNoMapeadoNoDefinido_42_upperRange" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.SwitchAutoStatus>
+					<SignalGenerated Name="DATA.SwitchAutoStatus" Description="Status - SwitchAuto State" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Filter_SW>
+					<SignalGenerated Name="CALC.Filter_SW" Description="Harmonic Filter Switch" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Ground_SW>
+					<SignalGenerated Name="CALC.Ground_SW" Description="Grounding Switch" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.S2_DC_SW>
+					<SignalGenerated Name="CALC.S2_DC_SW" Description="Power Section 2 DC Switch" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.S2_AC_SW>
+					<SignalGenerated Name="CALC.S2_AC_SW" Description="Power Section 2 AC Switch" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.EnableS2>
+					<SignalGenerated Name="CALC.EnableS2" Description="Power Section 2 enabled" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.S1_DC_SW>
+					<SignalGenerated Name="CALC.S1_DC_SW" Description="Power Section 1 DC Switch" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.S1_AC_SW>
+					<SignalGenerated Name="CALC.S1_AC_SW" Description="Power Section 1 AC Switch" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.EnableS1>
+					<SignalGenerated Name="CALC.EnableS1" Description="Power Section 1 enabled" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString>
+					<SignalGenerated Name="DATA.AlarmBitString" Description="Alarm BitString" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString0>
+					<SignalGenerated Name="DATA.AlarmBitString0" Description="Alarm BitString 0" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString1>
+					<SignalGenerated Name="DATA.AlarmBitString1" Description="Alarm BitString 1" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString2>
+					<SignalGenerated Name="DATA.AlarmBitString2" Description="Alarm BitString 2" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString3>
+					<SignalGenerated Name="DATA.AlarmBitString3" Description="Alarm BitString 3" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString4>
+					<SignalGenerated Name="DATA.AlarmBitString4" Description="Alarm BitString 4" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString5>
+					<SignalGenerated Name="DATA.AlarmBitString5" Description="Alarm BitString 5" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString6>
+					<SignalGenerated Name="DATA.AlarmBitString6" Description="Alarm BitString 6" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString7>
+					<SignalGenerated Name="DATA.AlarmBitString7" Description="Alarm BitString 7" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString8>
+					<SignalGenerated Name="DATA.AlarmBitString8" Description="Alarm BitString 8" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString9>
+					<SignalGenerated Name="DATA.AlarmBitString9" Description="Alarm BitString 9" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString10>
+					<SignalGenerated Name="DATA.AlarmBitString10" Description="Alarm BitString 10" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString11>
+					<SignalGenerated Name="DATA.AlarmBitString11" Description="Alarm BitString 11" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString12>
+					<SignalGenerated Name="DATA.AlarmBitString12" Description="Alarm BitString 12" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString13>
+					<SignalGenerated Name="DATA.AlarmBitString13" Description="Alarm BitString 13" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString14>
+					<SignalGenerated Name="DATA.AlarmBitString14" Description="Alarm BitString 14" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString15>
+					<SignalGenerated Name="DATA.AlarmBitString15" Description="Alarm BitString 15" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString16>
+					<SignalGenerated Name="DATA.AlarmBitString16" Description="Alarm BitString 16" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString17>
+					<SignalGenerated Name="DATA.AlarmBitString17" Description="Alarm BitString 17" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString18>
+					<SignalGenerated Name="DATA.AlarmBitString18" Description="Alarm BitString 18" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString19>
+					<SignalGenerated Name="DATA.AlarmBitString19" Description="Alarm BitString 19" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AlarmBitString31>
+					<SignalGenerated Name="DATA.AlarmBitString31" Description="Alarm BitString 31" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.ApparentPower>
+					<SignalGenerated Name="DATA.ApparentPower" Description="ValorNoMapeadoNoDefinido_75_isotrolEngDescription" Protocol="DummyProtocol" Unit="kVA" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-1000.0" RangeUpperLimit="4000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.DUChannels>
+					<SignalGenerated Name="DATA.DUChannels" Description="DU Number of Channels" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="40.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempDU>
+					<SignalGenerated Name="DATA.TempDU" Description="Temperature - PVInput Control Electronics " Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempAmbient>
+					<SignalGenerated Name="DATA.TempAmbient" Description="Temperature - Ambient" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempExtAmbient>
+					<SignalGenerated Name="DATA.TempExtAmbient" Description="External Ambient Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempINCooling>
+					<SignalGenerated Name="DATA.TempINCooling" Description="Input Air Cooling Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempOUTCooling>
+					<SignalGenerated Name="DATA.TempOUTCooling" Description="Output Air Cooling Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempCCU>
+					<SignalGenerated Name="DATA.TempCCU" Description="CCU Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempLowCooling>
+					<SignalGenerated Name="DATA.TempLowCooling" Description="Low Pressure Liquid Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempHighCooling>
+					<SignalGenerated Name="DATA.TempHighCooling" Description="High Pressure Liquid Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempDCFusesAmbient>
+					<SignalGenerated Name="DATA.TempDCFusesAmbient" Description="DC Fuses Ambient Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempHarmonicFilter>
+					<SignalGenerated Name="DATA.TempHarmonicFilter" Description="Harmonic Filter Temperature" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempInd>
+					<SignalGenerated Name="DATA.TempInd" Description="Temperature - Inductors" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempFilter>
+					<SignalGenerated Name="DATA.TempFilter" Description="Temperature - Filter" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempCoolant>
+					<SignalGenerated Name="DATA.TempCoolant" Description="Temperature - Coolant" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempCabin>
+					<SignalGenerated Name="DATA.TempCabin" Description="Temperature - Device Cabin Internal " Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.TempIGBT>
+					<SignalGenerated Name="DATA.TempIGBT" Description="Temperature - IGBT" Protocol="DummyProtocol" Unit="ºC" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.InputTemperature>
+					<SignalGenerated Name="DATA.InputTemperature" Description="Temperature - AC Module Input " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PressLiquidCoolingLow>
+					<SignalGenerated Name="DATA.PressLiquidCoolingLow" Description="Pressure Liquid Cooling .Low" Protocol="DummyProtocol" Unit="mbar" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PressLiquidCoolingHigh>
+					<SignalGenerated Name="DATA.PressLiquidCoolingHigh" Description="Pressure Liquid Cooling .High" Protocol="DummyProtocol" Unit="mbar" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.LiquidCoolingFlow>
+					<SignalGenerated Name="DATA.LiquidCoolingFlow" Description="Liquid Cooling Flow" Protocol="DummyProtocol" Unit="l/min" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Fan1Speed>
+					<SignalGenerated Name="DATA.Fan1Speed" Description="Fan 1 Speed" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Fan2Speed>
+					<SignalGenerated Name="DATA.Fan2Speed" Description="Fan 2 Speed" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Fan3Speed>
+					<SignalGenerated Name="DATA.Fan3Speed" Description="Fan 3 Speed" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Fan4Speed>
+					<SignalGenerated Name="DATA.Fan4Speed" Description="Fan 4 Speed" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.AirForcedCooling>
+					<SignalGenerated Name="DATA.AirForcedCooling" Description="Air Cooling Forced Ventilation" Protocol="DummyProtocol" Unit="m3/h" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Setpoint_FanSpeed>
+					<SignalGenerated Name="DATA.Setpoint_FanSpeed" Description="Setpoint Fans Speed" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Setpoint_AirForcedCooling>
+					<SignalGenerated Name="DATA.Setpoint_AirForcedCooling" Description="Setpoint Air Cooling Forced Ventilation" Protocol="DummyProtocol" Unit="m3/h" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="3000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.ControlMode_Command_State>
+					<SignalGenerated Name="DATA.ControlMode_Command_State" Description="Control Mode Real Command State" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.ControlMode_Command>
+					<SignalGenerated Name="DATA.ControlMode_Command" Description="Control Mode Real Command" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="5.0" Storable="Y" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Setpoint_ActivePower>
+					<SignalGenerated Name="DATA.Setpoint_ActivePower" Description="Setpoint P" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="6000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.Setpoint_ReactivePower>
+					<SignalGenerated Name="DATA.Setpoint_ReactivePower" Description="Setpoint Q" Protocol="DummyProtocol" Unit="kvar" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.01" RangeLowerLimit="-100.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01DCCurrent>
+					<SignalGenerated Name="DATA.MOD01DCCurrent" Description="MOD01 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-60.0" RangeUpperLimit="700.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.MOD01DCPower>
+					<SignalGenerated Name="CALC.MOD01DCPower" Description="MOD01 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-100.0" RangeUpperLimit="700.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01DCVoltage>
+					<SignalGenerated Name="DATA.MOD01DCVoltage" Description="MOD01 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01AmbientTemperature>
+					<SignalGenerated Name="DATA.MOD01AmbientTemperature" Description="MOD01 Temperature PCB" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01TempIndCore>
+					<SignalGenerated Name="DATA.MOD01TempIndCore" Description="MOD01 CORE Temperature" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01TempPh1>
+					<SignalGenerated Name="DATA.MOD01TempPh1" Description="MOD01 Temperature Phase 1" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01TempPh2>
+					<SignalGenerated Name="DATA.MOD01TempPh2" Description="MOD01 Temperature Phase 2" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01TempPh3>
+					<SignalGenerated Name="DATA.MOD01TempPh3" Description="MOD01 Temperature Phase 3" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD01TempIndCoil>
+					<SignalGenerated Name="DATA.MOD01TempIndCoil" Description="MOD01 Coil Temperature" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02DCCurrent>
+					<SignalGenerated Name="DATA.MOD02DCCurrent" Description="MOD02 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-60.0" RangeUpperLimit="700.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.MOD02DCPower>
+					<SignalGenerated Name="CALC.MOD02DCPower" Description="MOD02 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-100.0" RangeUpperLimit="700.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02DCVoltage>
+					<SignalGenerated Name="DATA.MOD02DCVoltage" Description="MOD02 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02AmbientTemperature>
+					<SignalGenerated Name="DATA.MOD02AmbientTemperature" Description="MOD02 Temperature PCB" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02TempIndCore>
+					<SignalGenerated Name="DATA.MOD02TempIndCore" Description="MOD02 CORE Temperature" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02TempPh1>
+					<SignalGenerated Name="DATA.MOD02TempPh1" Description="MOD02 Temperature Phase 1" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02TempPh2>
+					<SignalGenerated Name="DATA.MOD02TempPh2" Description="MOD02 Temperature Phase 2" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02TempPh3>
+					<SignalGenerated Name="DATA.MOD02TempPh3" Description="MOD02 Temperature Phase 3" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.MOD02TempIndCoil>
+					<SignalGenerated Name="DATA.MOD02TempIndCoil" Description="MOD02 Coil Temperature" Protocol="DummyProtocol" Unit="°C" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-20.0" RangeUpperLimit="150.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage01>
+					<SignalGenerated Name="DATA.PVInputVoltage01" Description="PVInput 01 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent01>
+					<SignalGenerated Name="DATA.PVInputCurrent01" Description="PVInput 01 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus01>
+					<SignalGenerated Name="DATA.PVInputStatus01" Description="PVInput 01 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower01>
+					<SignalGenerated Name="DATA.PVInputPower01" Description="PVInput 01 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc01>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc01" Description="PVInput 01 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter01>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter01" Description="PVInput 01 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm01>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm01" Description="PVInput 01 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal01>
+					<SignalGenerated Name="CALC.PVInputPowerNominal01" Description="PVInput 01 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage02>
+					<SignalGenerated Name="DATA.PVInputVoltage02" Description="PVInput 02 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent02>
+					<SignalGenerated Name="DATA.PVInputCurrent02" Description="PVInput 02 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus02>
+					<SignalGenerated Name="DATA.PVInputStatus02" Description="PVInput 02 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower02>
+					<SignalGenerated Name="DATA.PVInputPower02" Description="PVInput 02 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc02>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc02" Description="PVInput 02 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter02>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter02" Description="PVInput 02 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm02>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm02" Description="PVInput 02 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal02>
+					<SignalGenerated Name="CALC.PVInputPowerNominal02" Description="PVInput 02 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage03>
+					<SignalGenerated Name="DATA.PVInputVoltage03" Description="PVInput 03 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent03>
+					<SignalGenerated Name="DATA.PVInputCurrent03" Description="PVInput 03 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus03>
+					<SignalGenerated Name="DATA.PVInputStatus03" Description="PVInput 03 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower03>
+					<SignalGenerated Name="DATA.PVInputPower03" Description="PVInput 03 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc03>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc03" Description="PVInput 03 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter03>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter03" Description="PVInput 03 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm03>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm03" Description="PVInput 03 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal03>
+					<SignalGenerated Name="CALC.PVInputPowerNominal03" Description="PVInput 03 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage04>
+					<SignalGenerated Name="DATA.PVInputVoltage04" Description="PVInput 04 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent04>
+					<SignalGenerated Name="DATA.PVInputCurrent04" Description="PVInput 04 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus04>
+					<SignalGenerated Name="DATA.PVInputStatus04" Description="PVInput 04 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower04>
+					<SignalGenerated Name="DATA.PVInputPower04" Description="PVInput 04 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc04>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc04" Description="PVInput 04 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter04>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter04" Description="PVInput 04 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm04>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm04" Description="PVInput 04 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal04>
+					<SignalGenerated Name="CALC.PVInputPowerNominal04" Description="PVInput 04 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage05>
+					<SignalGenerated Name="DATA.PVInputVoltage05" Description="PVInput 05 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent05>
+					<SignalGenerated Name="DATA.PVInputCurrent05" Description="PVInput 05 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus05>
+					<SignalGenerated Name="DATA.PVInputStatus05" Description="PVInput 05 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower05>
+					<SignalGenerated Name="DATA.PVInputPower05" Description="PVInput 05 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc05>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc05" Description="PVInput 05 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter05>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter05" Description="PVInput 05 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm05>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm05" Description="PVInput 05 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal05>
+					<SignalGenerated Name="CALC.PVInputPowerNominal05" Description="PVInput 05 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage06>
+					<SignalGenerated Name="DATA.PVInputVoltage06" Description="PVInput 06 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent06>
+					<SignalGenerated Name="DATA.PVInputCurrent06" Description="PVInput 06 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus06>
+					<SignalGenerated Name="DATA.PVInputStatus06" Description="PVInput 06 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower06>
+					<SignalGenerated Name="DATA.PVInputPower06" Description="PVInput 06 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc06>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc06" Description="PVInput 06 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter06>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter06" Description="PVInput 06 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm06>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm06" Description="PVInput 06 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal06>
+					<SignalGenerated Name="CALC.PVInputPowerNominal06" Description="PVInput 06 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage07>
+					<SignalGenerated Name="DATA.PVInputVoltage07" Description="PVInput 07 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent07>
+					<SignalGenerated Name="DATA.PVInputCurrent07" Description="PVInput 07 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus07>
+					<SignalGenerated Name="DATA.PVInputStatus07" Description="PVInput 07 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower07>
+					<SignalGenerated Name="DATA.PVInputPower07" Description="PVInput 07 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc07>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc07" Description="PVInput 07 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter07>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter07" Description="PVInput 07 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm07>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm07" Description="PVInput 07 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal07>
+					<SignalGenerated Name="CALC.PVInputPowerNominal07" Description="PVInput 07 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage08>
+					<SignalGenerated Name="DATA.PVInputVoltage08" Description="PVInput 08 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent08>
+					<SignalGenerated Name="DATA.PVInputCurrent08" Description="PVInput 08 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus08>
+					<SignalGenerated Name="DATA.PVInputStatus08" Description="PVInput 08 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower08>
+					<SignalGenerated Name="DATA.PVInputPower08" Description="PVInput 08 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc08>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc08" Description="PVInput 08 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter08>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter08" Description="PVInput 08 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm08>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm08" Description="PVInput 08 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal08>
+					<SignalGenerated Name="CALC.PVInputPowerNominal08" Description="PVInput 08 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage09>
+					<SignalGenerated Name="DATA.PVInputVoltage09" Description="PVInput 09 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent09>
+					<SignalGenerated Name="DATA.PVInputCurrent09" Description="PVInput 09 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus09>
+					<SignalGenerated Name="DATA.PVInputStatus09" Description="PVInput 09 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower09>
+					<SignalGenerated Name="DATA.PVInputPower09" Description="PVInput 09 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc09>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc09" Description="PVInput 09 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter09>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter09" Description="PVInput 09 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm09>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm09" Description="PVInput 09 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal09>
+					<SignalGenerated Name="CALC.PVInputPowerNominal09" Description="PVInput 09 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage10>
+					<SignalGenerated Name="DATA.PVInputVoltage10" Description="PVInput 10 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent10>
+					<SignalGenerated Name="DATA.PVInputCurrent10" Description="PVInput 10 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus10>
+					<SignalGenerated Name="DATA.PVInputStatus10" Description="PVInput 10 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower10>
+					<SignalGenerated Name="DATA.PVInputPower10" Description="PVInput 10 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc10>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc10" Description="PVInput 10 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter10>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter10" Description="PVInput 10 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm10>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm10" Description="PVInput 10 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal10>
+					<SignalGenerated Name="CALC.PVInputPowerNominal10" Description="PVInput 10 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage11>
+					<SignalGenerated Name="DATA.PVInputVoltage11" Description="PVInput 11 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent11>
+					<SignalGenerated Name="DATA.PVInputCurrent11" Description="PVInput 11 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus11>
+					<SignalGenerated Name="DATA.PVInputStatus11" Description="PVInput 11 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower11>
+					<SignalGenerated Name="DATA.PVInputPower11" Description="PVInput 11 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc11>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc11" Description="PVInput 11 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter11>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter11" Description="PVInput 11 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm11>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm11" Description="PVInput 11 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal11>
+					<SignalGenerated Name="CALC.PVInputPowerNominal11" Description="PVInput 11 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage12>
+					<SignalGenerated Name="DATA.PVInputVoltage12" Description="PVInput 12 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent12>
+					<SignalGenerated Name="DATA.PVInputCurrent12" Description="PVInput 12 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus12>
+					<SignalGenerated Name="DATA.PVInputStatus12" Description="PVInput 12 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower12>
+					<SignalGenerated Name="DATA.PVInputPower12" Description="PVInput 12 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc12>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc12" Description="PVInput 12 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter12>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter12" Description="PVInput 12 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm12>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm12" Description="PVInput 12 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal12>
+					<SignalGenerated Name="CALC.PVInputPowerNominal12" Description="PVInput 12 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage13>
+					<SignalGenerated Name="DATA.PVInputVoltage13" Description="PVInput 13 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent13>
+					<SignalGenerated Name="DATA.PVInputCurrent13" Description="PVInput 13 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus13>
+					<SignalGenerated Name="DATA.PVInputStatus13" Description="PVInput 13 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower13>
+					<SignalGenerated Name="DATA.PVInputPower13" Description="PVInput 13 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc13>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc13" Description="PVInput 13 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter13>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter13" Description="PVInput 13 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm13>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm13" Description="PVInput 13 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal13>
+					<SignalGenerated Name="CALC.PVInputPowerNominal13" Description="PVInput 13 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage14>
+					<SignalGenerated Name="DATA.PVInputVoltage14" Description="PVInput 14 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent14>
+					<SignalGenerated Name="DATA.PVInputCurrent14" Description="PVInput 14 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus14>
+					<SignalGenerated Name="DATA.PVInputStatus14" Description="PVInput 14 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower14>
+					<SignalGenerated Name="DATA.PVInputPower14" Description="PVInput 14 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc14>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc14" Description="PVInput 14 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter14>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter14" Description="PVInput 14 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm14>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm14" Description="PVInput 14 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal14>
+					<SignalGenerated Name="CALC.PVInputPowerNominal14" Description="PVInput 14 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage15>
+					<SignalGenerated Name="DATA.PVInputVoltage15" Description="PVInput 15 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent15>
+					<SignalGenerated Name="DATA.PVInputCurrent15" Description="PVInput 15 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus15>
+					<SignalGenerated Name="DATA.PVInputStatus15" Description="PVInput 15 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower15>
+					<SignalGenerated Name="DATA.PVInputPower15" Description="PVInput 15 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc15>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc15" Description="PVInput 15 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter15>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter15" Description="PVInput 15 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm15>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm15" Description="PVInput 15 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal15>
+					<SignalGenerated Name="CALC.PVInputPowerNominal15" Description="PVInput 15 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage16>
+					<SignalGenerated Name="DATA.PVInputVoltage16" Description="PVInput 16 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent16>
+					<SignalGenerated Name="DATA.PVInputCurrent16" Description="PVInput 16 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus16>
+					<SignalGenerated Name="DATA.PVInputStatus16" Description="PVInput 16 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower16>
+					<SignalGenerated Name="DATA.PVInputPower16" Description="PVInput 16 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc16>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc16" Description="PVInput 16 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter16>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter16" Description="PVInput 16 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm16>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm16" Description="PVInput 16 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal16>
+					<SignalGenerated Name="CALC.PVInputPowerNominal16" Description="PVInput 16 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage17>
+					<SignalGenerated Name="DATA.PVInputVoltage17" Description="PVInput 17 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent17>
+					<SignalGenerated Name="DATA.PVInputCurrent17" Description="PVInput 17 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus17>
+					<SignalGenerated Name="DATA.PVInputStatus17" Description="PVInput 17 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower17>
+					<SignalGenerated Name="DATA.PVInputPower17" Description="PVInput 17 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc17>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc17" Description="PVInput 17 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter17>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter17" Description="PVInput 17 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm17>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm17" Description="PVInput 17 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal17>
+					<SignalGenerated Name="CALC.PVInputPowerNominal17" Description="PVInput 17 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage18>
+					<SignalGenerated Name="DATA.PVInputVoltage18" Description="PVInput 18 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent18>
+					<SignalGenerated Name="DATA.PVInputCurrent18" Description="PVInput 18 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus18>
+					<SignalGenerated Name="DATA.PVInputStatus18" Description="PVInput 18 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower18>
+					<SignalGenerated Name="DATA.PVInputPower18" Description="PVInput 18 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc18>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc18" Description="PVInput 18 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter18>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter18" Description="PVInput 18 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm18>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm18" Description="PVInput 18 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal18>
+					<SignalGenerated Name="CALC.PVInputPowerNominal18" Description="PVInput 18 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage19>
+					<SignalGenerated Name="DATA.PVInputVoltage19" Description="PVInput 19 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent19>
+					<SignalGenerated Name="DATA.PVInputCurrent19" Description="PVInput 19 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus19>
+					<SignalGenerated Name="DATA.PVInputStatus19" Description="PVInput 19 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower19>
+					<SignalGenerated Name="DATA.PVInputPower19" Description="PVInput 19 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc19>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc19" Description="PVInput 19 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter19>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter19" Description="PVInput 19 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm19>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm19" Description="PVInput 19 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal19>
+					<SignalGenerated Name="CALC.PVInputPowerNominal19" Description="PVInput 19 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage20>
+					<SignalGenerated Name="DATA.PVInputVoltage20" Description="PVInput 20 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent20>
+					<SignalGenerated Name="DATA.PVInputCurrent20" Description="PVInput 20 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus20>
+					<SignalGenerated Name="DATA.PVInputStatus20" Description="PVInput 20 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower20>
+					<SignalGenerated Name="DATA.PVInputPower20" Description="PVInput 20 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc20>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc20" Description="PVInput 20 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter20>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter20" Description="PVInput 20 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm20>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm20" Description="PVInput 20 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal20>
+					<SignalGenerated Name="CALC.PVInputPowerNominal20" Description="PVInput 20 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage21>
+					<SignalGenerated Name="DATA.PVInputVoltage21" Description="PVInput 21 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent21>
+					<SignalGenerated Name="DATA.PVInputCurrent21" Description="PVInput 21 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus21>
+					<SignalGenerated Name="DATA.PVInputStatus21" Description="PVInput 21 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower21>
+					<SignalGenerated Name="DATA.PVInputPower21" Description="PVInput 21 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc21>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc21" Description="PVInput 21 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter21>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter21" Description="PVInput 21 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm21>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm21" Description="PVInput 21 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal21>
+					<SignalGenerated Name="CALC.PVInputPowerNominal21" Description="PVInput 21 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage22>
+					<SignalGenerated Name="DATA.PVInputVoltage22" Description="PVInput 22 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent22>
+					<SignalGenerated Name="DATA.PVInputCurrent22" Description="PVInput 22 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus22>
+					<SignalGenerated Name="DATA.PVInputStatus22" Description="PVInput 22 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower22>
+					<SignalGenerated Name="DATA.PVInputPower22" Description="PVInput 22 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc22>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc22" Description="PVInput 22 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter22>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter22" Description="PVInput 22 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm22>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm22" Description="PVInput 22 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal22>
+					<SignalGenerated Name="CALC.PVInputPowerNominal22" Description="PVInput 22 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage23>
+					<SignalGenerated Name="DATA.PVInputVoltage23" Description="PVInput 23 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent23>
+					<SignalGenerated Name="DATA.PVInputCurrent23" Description="PVInput 23 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus23>
+					<SignalGenerated Name="DATA.PVInputStatus23" Description="PVInput 23 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower23>
+					<SignalGenerated Name="DATA.PVInputPower23" Description="PVInput 23 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc23>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc23" Description="PVInput 23 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter23>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter23" Description="PVInput 23 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm23>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm23" Description="PVInput 23 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal23>
+					<SignalGenerated Name="CALC.PVInputPowerNominal23" Description="PVInput 23 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputVoltage24>
+					<SignalGenerated Name="DATA.PVInputVoltage24" Description="PVInput 24 DC Voltage" Protocol="DummyProtocol" Unit="V" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="999.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputCurrent24>
+					<SignalGenerated Name="DATA.PVInputCurrent24" Description="PVInput 24 DC Current" Protocol="DummyProtocol" Unit="A" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="0.1" RangeLowerLimit="0.0" RangeUpperLimit="2000.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputStatus24>
+					<SignalGenerated Name="DATA.PVInputStatus24" Description="PVInput 24 Status" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="65535.0" Storable="Y" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=DATA.PVInputPower24>
+					<SignalGenerated Name="DATA.PVInputPower24" Description="PVInput 24 DC Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationPerc24>
+					<SignalGenerated Name="CALC.PVInputDeviationPerc24" Description="PVInput 24 Deviation Percent" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="100.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationTimeCounter24>
+					<SignalGenerated Name="CALC.PVInputDeviationTimeCounter24" Description="PVInput 24 Deviation Seconds" Protocol="DummyProtocol" Unit="seg" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="86400.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputDeviationAlarm24>
+					<SignalGenerated Name="CALC.PVInputDeviationAlarm24" Description="PVInput 24 Deviation Alarm" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.PVInputPowerNominal24>
+					<SignalGenerated Name="CALC.PVInputPowerNominal24" Description="PVInput 24 String Nominal Power" Protocol="DummyProtocol" Unit="kW" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="2000000.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.DCVoltage>
+					<SignalGenerated Name="CALC.DCVoltage" Description="ValorNoMapeadoNoDefinido_319_isotrolEngDescription" Protocol="DummyProtocol" Unit="kV" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-100.0" RangeUpperLimit="10000.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Performance>
+					<SignalGenerated Name="CALC.Performance" Description="Performance" Protocol="DummyProtocol" Unit="%" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="-100.0" RangeUpperLimit="100.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.AlarmFlag>
+					<SignalGenerated Name="CALC.AlarmFlag" Description="Superior Parents Available (PV and PS)" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.AlarmAvailability>
+					<SignalGenerated Name="CALC.AlarmAvailability" Description="Availability Indicator for Children" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_Start>
+					<SignalGenerated Name="CALC.Command_Start" Description="Command Local Start " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_Start>
+					<SignalGenerated Name="CALC.RemoteCommand_Start" Description="Command Remote Start " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_Start>
+					<SignalGenerated Name="CALC.ExternalCommand_Start" Description="Command External Start " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_StartACK>
+					<SignalGenerated Name="CALC.Command_StartACK" Description="Command Start Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_StartOK>
+					<SignalGenerated Name="CALC.Command_StartOK" Description="Command Start OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_StartFAIL>
+					<SignalGenerated Name="CALC.Command_StartFAIL" Description="Command Start Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_StartACK>
+					<SignalGenerated Name="CALC.RemoteCommand_StartACK" Description="Remote Command Start Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_StartOK>
+					<SignalGenerated Name="CALC.RemoteCommand_StartOK" Description="Remote Command Start OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_StartFAIL>
+					<SignalGenerated Name="CALC.RemoteCommand_StartFAIL" Description="Remote Command Start Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_StartACK>
+					<SignalGenerated Name="CALC.ExternalCommand_StartACK" Description="External Command Start Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_StartOK>
+					<SignalGenerated Name="CALC.ExternalCommand_StartOK" Description="External Command Start OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_StartFAIL>
+					<SignalGenerated Name="CALC.ExternalCommand_StartFAIL" Description="External Command Start Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_Stop>
+					<SignalGenerated Name="CALC.Command_Stop" Description="Command Local Stop " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_Stop>
+					<SignalGenerated Name="CALC.RemoteCommand_Stop" Description="Command Remote Stop " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_Stop>
+					<SignalGenerated Name="CALC.ExternalCommand_Stop" Description="Command External Stop " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_StopACK>
+					<SignalGenerated Name="CALC.Command_StopACK" Description="Command Stop Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_StopOK>
+					<SignalGenerated Name="CALC.Command_StopOK" Description="Command Stop OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_StopFAIL>
+					<SignalGenerated Name="CALC.Command_StopFAIL" Description="Command Stop Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_StopACK>
+					<SignalGenerated Name="CALC.RemoteCommand_StopACK" Description="Remote Command Stop Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_StopOK>
+					<SignalGenerated Name="CALC.RemoteCommand_StopOK" Description="Remote Command Stop OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_StopFAIL>
+					<SignalGenerated Name="CALC.RemoteCommand_StopFAIL" Description="Remote Command Stop Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_StopACK>
+					<SignalGenerated Name="CALC.ExternalCommand_StopACK" Description="External Command Stop Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_StopOK>
+					<SignalGenerated Name="CALC.ExternalCommand_StopOK" Description="External Command Stop OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_StopFAIL>
+					<SignalGenerated Name="CALC.ExternalCommand_StopFAIL" Description="External Command Stop Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_Reset>
+					<SignalGenerated Name="CALC.Command_Reset" Description="Command Local Reset " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_Reset>
+					<SignalGenerated Name="CALC.RemoteCommand_Reset" Description="Command Remote Reset " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_Reset>
+					<SignalGenerated Name="CALC.ExternalCommand_Reset" Description="Command External Reset " Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="W" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_ResetACK>
+					<SignalGenerated Name="CALC.Command_ResetACK" Description="Command Reset Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_ResetOK>
+					<SignalGenerated Name="CALC.Command_ResetOK" Description="Command Reset OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.Command_ResetFAIL>
+					<SignalGenerated Name="CALC.Command_ResetFAIL" Description="Command Reset Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_ResetACK>
+					<SignalGenerated Name="CALC.RemoteCommand_ResetACK" Description="Remote Command Reset Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_ResetOK>
+					<SignalGenerated Name="CALC.RemoteCommand_ResetOK" Description="Remote Command Reset OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.RemoteCommand_ResetFAIL>
+					<SignalGenerated Name="CALC.RemoteCommand_ResetFAIL" Description="Remote Command Reset Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_ResetACK>
+					<SignalGenerated Name="CALC.ExternalCommand_ResetACK" Description="External Command Reset Feedback" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_ResetOK>
+					<SignalGenerated Name="CALC.ExternalCommand_ResetOK" Description="External Command Reset OK" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.ExternalCommand_ResetFAIL>
+					<SignalGenerated Name="CALC.ExternalCommand_ResetFAIL" Description="External Command Reset Fail" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Protocol"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.MOD01CalculatedStatus>
+					<SignalGenerated Name="CALC.MOD01CalculatedStatus" Description="Calculated Status Module 01" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="27.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.MOD02CalculatedStatus>
+					<SignalGenerated Name="CALC.MOD02CalculatedStatus" Description="Calculated Status Module 02" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="27.0" Storable="Y" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.CPAEnabled>
+					<SignalGenerated Name="CALC.CPAEnabled" Description="Inverter Active Power Control Loop Enabler" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+				<DummyItem DummyItemName=CALC.CPREnabled>
+					<SignalGenerated Name="CALC.CPREnabled" Description="Inverter Reactive Power Control Loop Enabler" Protocol="DummyProtocol" Unit="" nBus="Bus" Device="Device" Address="Address" Offset="0.0" Scale="1.0" RangeLowerLimit="0.0" RangeUpperLimit="1.0" Storable="N" Operation="R" Source="Business"/>
+				</DummyItem>
+</DummyItems>
+		</DummyGroup>]]>
+	</Body>
+</Template>
