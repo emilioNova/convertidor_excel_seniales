@@ -15,6 +15,9 @@ import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFColor;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.awt.Color;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Utill {
@@ -55,7 +58,26 @@ public class Utill {
             for (RegistroExcel signalInfo : signalInfoList) {
                 
             	if(signalInfo.getSignalClass().equalsIgnoreCase("DUMMY") || signalInfo.getSignalClass().equalsIgnoreCase("PROTOCOL")) {
-	            	Row row = sheet.createRow(rowNum++);
+	            	
+            		// estilos color celdas
+                    // Crear un estilo de celda con color de fondo
+                    CellStyle style = workbook.createCellStyle();
+                    
+                    Color colorAzul = new Color(0xC6, 0xD9, 0xF1); // Azul
+                    Color colorVerde = new Color(0x92, 0xD0, 0x50); // verde
+                    
+                    if(signalInfo.getSignalClass().equalsIgnoreCase("PROTOCOL")) {
+                    	style.setFillForegroundColor(IndexedColors.PALE_BLUE.getIndex()); // Cambiar a tu color deseado
+                    	//style.setFillForegroundColor(new XSSFColor(colorAzul)); 
+                    }else {
+                    	style.setFillForegroundColor(IndexedColors.LIGHT_GREEN.getIndex()); // Cambiar a tu color deseado
+                    	//style.setFillForegroundColor(new XSSFColor(colorVerde)); 
+                    }
+                    style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+            		
+            		
+            		//
+            		Row row = sheet.createRow(rowNum++);
 	                row.createCell(0).setCellValue(RegistroExcel.CELDA_VACIA);
 	                
 	                // se le concatena al inicio CALC o DATA dependiendo de la fuente (valor signalClass) 
@@ -103,10 +125,24 @@ public class Utill {
 	                
 	                // Se debe escribir como 'Protocol' o 'Business' dependiendo de su valor en mayusculas
 	                row.createCell(11).setCellValue(formatSource(signalInfo.getSource()));
+	                
+	                
+	                
+	                
+	                
+	                style.setBorderBottom(BorderStyle.THIN);
+	                style.setBorderTop(BorderStyle.THIN);
+	                style.setBorderRight(BorderStyle.THIN);
+	                style.setBorderLeft(BorderStyle.THIN);
+    
+	                row.setRowStyle(style);
             	}               
             	if(signalInfo.getSignalClass().equalsIgnoreCase("WEB")) {
             		erroresEnExcel.put(String.valueOf(rowNum)+ " WEB", "Se omite la inclusión de este registro por ser de calse WEB");
             	}
+            	
+            	
+            	
             }
             
             

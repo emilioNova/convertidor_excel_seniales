@@ -17,11 +17,11 @@ public class Main {
 	
 	
     public static void main(String[] args) {
-
+/*
     	inputFilePath = "C:\\Users\\emilio-desarrollo\\Desktop\\pruebas_excel\\Business_model_INV_GAMESA_PV_4300_SERIES_3X_v03.xlsx";
     	outputFilePath = "C:\\Users\\emilio-desarrollo\\Desktop\\pruebas_excel\\ggggggggggggggggg.xlsx";
         sheetName = "Data";
-    	
+  */  	
     	// pide las rutas por consola
     	ingresaRutasParam();
     	
