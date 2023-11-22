@@ -172,7 +172,7 @@ public class Utill {
 							+ "Name=\""+isotrolSignalTag+"\" "
 							+ "Description=\""+isotrolEngDescription+"\" "
 							+ "Protocol=\"DummyProtocol\" "
-							+ "Unit=\""+units.replace("°C", "\\u00B0C")+"\" n"
+							+ "Unit=\""+units.replace("°C", "\u00B0C")+"\" n"
 							+ "Bus=\"Bus\" "
 							+ "Device=\"Device\" "
 							+ "Address=\"Address\" "
