@@ -167,12 +167,12 @@ public class Utill {
 				    }				
 					
 					
-					itemXml ="				<DummyItem DummyItemName="+isotrolSignalTag+">\r\n"
+					itemXml ="				<DummyItem DummyItemName=\""+isotrolSignalTag+">\r\n"
 							+ "					<SignalGenerated "
 							+ "Name=\""+isotrolSignalTag+"\" "
 							+ "Description=\""+isotrolEngDescription+"\" "
 							+ "Protocol=\"DummyProtocol\" "
-							+ "Unit=\""+units+"\" n"
+							+ "Unit=\""+units.replace("°C", "\\u00B0C")+"\" n"
 							+ "Bus=\"Bus\" "
 							+ "Device=\"Device\" "
 							+ "Address=\"Address\" "
