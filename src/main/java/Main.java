@@ -21,10 +21,10 @@ public class Main {
 	
     public static void main(String[] args) {
     	
-    	/*
-    	inputFilePath = "C:\\Users\\emilio-desarrollo\\Desktop\\pruebas_excel\\Business_model_INV_GAMESA_PV_4300_SERIES_3X_v03.xlsx";
-    	outputFilePath = "C:\\Users\\emilio-desarrollo\\Desktop\\pruebas_excel\\nuevooooo.xlm";
-        */
+    	
+    	inputFilePath = "C:\\Users\\enova\\Desktop\\actualizacion_pre\\Gamesa\\Business_model_INV_GAMESA_PV_4300_SERIES_3X_v03.xlsx";
+    	outputFilePath = "C:\\Users\\enova\\Desktop\\actualizacion_pre\\Gamesa\\pruebaPattern.xml";
+        
         sheetName = "Data";
  
     	// pide las rutas por consola
@@ -44,6 +44,15 @@ public class Main {
         for (Map.Entry<String, String> entry : Utill.erroresEnExcel.entrySet()) {
             System.out.println("En el registro Nº: " + entry.getKey() + ", Se ha producido el siguiente error: " + entry.getValue());
         }
+        
+      /* 
+        System.out.println("Caracteres de las unidades: ");
+        // Iterar sobre el Map
+        for (Map.Entry<String, String> entry : Utill.caracteresUnidades.entrySet()) {
+            System.out.println("caracter: " + entry.getKey() + " , iteracion " + entry.getValue());
+        }
+*/        
+        
     }
 
 	private static void ingresaRutasParam() {
@@ -78,7 +87,8 @@ public class Main {
         inputFilePath = scanner.nextLine();
         //System.out.println("inputFilePath despues escaner:  "+inputFilePath);
         
-        System.out.println("Ingresa el nombre de la hoja del Excel de donde se leeran los datos (Data):");
+        System.out.println("Ingresa el nombre de la hoja del Excel de donde se leeran los datos default Data:");
+        if(scanner.nextLine().isBlank())
         sheetName = scanner.nextLine();
         
 
